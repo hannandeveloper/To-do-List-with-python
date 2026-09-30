@@ -18,7 +18,10 @@ def view():
 def delete():
     try:
         a = int(input("Enter the index of which task you wnat to delete :\t"))
-        user_task.pop(a-1)
+        if not a:
+          print("enter correct index")
+        else:
+          user_task.pop(a-1)
     except ValueError:
         print("Enter a value")
 

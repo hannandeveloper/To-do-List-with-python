@@ -21,10 +21,10 @@ def delete():
         try:
           user_task.pop(a-1)
         except IndexError:
-            print("no value exists in this index")
+            print("--------------> no value exists in this index")
 
     except ValueError:
-        print("Enter a value")
+        print("--------------> Enter a value")
 
 
 
@@ -37,7 +37,7 @@ while True:
            for i in range(1,num_task):
                 add()
          except ValueError:
-             print("enter a num ")
+             print("--------------> enter a num ")
     elif user_choice == "2":
         view()
     elif user_choice == "3":
@@ -45,4 +45,4 @@ while True:
     elif user_choice == "4":
         break
     else:
-         print("Enter num according to the instruction")
+         print("--------------> Enter num according to the instruction")

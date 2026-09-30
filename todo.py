@@ -6,5 +6,13 @@ def add():
     return user_task
 
 
+def view():
+   for task in user_task:
+       print(f"{task}")
+
+
+
+
 
 add()
+view()

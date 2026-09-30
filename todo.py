@@ -1,9 +1,11 @@
 user_task = []
 
-def add():
-    todo = input("Enter a task: ")
-    user_task.append(todo)
-    return user_task
+
+def add():   
+       todo = input(f"{i}.Enter a task: ")
+       user_task.append(todo)
+       return user_task
+    
 
 
 def view():
@@ -23,7 +25,7 @@ def delete():
 
 
 while True:
-    user_choice = int(input("Enter your choice: \n add 1 view 2 delete 3 exit 4 :\t"))
+    user_choice = int(input("Enter your choice: \nadd 1 view 2 delete 3 exit 4 :\t"))
     if user_choice == 1:
         add()
     elif user_choice == 2:
@@ -32,3 +34,5 @@ while True:
         delete()
     elif user_choice == 4:
         break
+    else:
+         print("Enter num according to the instruction")

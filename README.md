@@ -1,6 +1,6 @@
-# To-do-List-with-python
+# Todo List with python
 
-### This todo project has the following features
+### Features
 - add
 - view
 - delete

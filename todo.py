@@ -13,7 +13,7 @@ def view():
         print("noo task")
    else:
         for i,task in enumerate(user_task,1):
-             print(f"{task}")
+             print(f"{i}.{task}")
 
 def delete():
     try:

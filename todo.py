@@ -10,9 +10,16 @@ def view():
    for task in user_task:
        print(f"{task}")
 
-
+def delete():
+    try:
+        a = int(input("Enter the index of which task you wnat to delete"))
+        user_task.pop(a)
+    except ValueError:
+        print("Enter a value")
 
 
 
 add()
 view()
+delete()
+print(user_task)
